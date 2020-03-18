@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="helloworldcicdFlow" doc:id="c42bc74a-0803-4f00-81c0-c5daf5d5adb2" >
 		<http:listener doc:name="Listener" doc:id="2a0bebc4-f2f2-4b24-b208-3ffaf960dfe9" config-ref="HTTP_Listener_config" path="/mani"/>
 		<logger level="INFO" doc:name="Logger" doc:id="189c5894-fd28-4852-b072-e6a13c87bba1" message="**********************hello world************************"/>
+		<set-payload value="this is simple flow payload" doc:name="Set Payload" doc:id="a4b1be5c-0b4f-4d79-a2a9-cf8dfea6f1e1" />
 	</flow>
 </mule>
